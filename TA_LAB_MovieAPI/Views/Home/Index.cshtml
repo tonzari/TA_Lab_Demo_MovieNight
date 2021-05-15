@@ -1,0 +1,8 @@
+﻿@model List<MovieModel>
+
+@foreach (MovieModel movie in Model)
+{
+    <p>@movie.Title</p>
+    <p>Runtime: @movie.Runtime</p>
+    <img src="@movie.Poster" />
+}
